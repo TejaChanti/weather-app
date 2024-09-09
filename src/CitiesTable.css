@@ -1,0 +1,149 @@
+.cities-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+.autocomplete-input {
+    position: fixed;
+    top: 20px;
+    left: 24%;
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .autocomplete-items {
+    position: absolute;
+    top: 52px;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
+  }
+  
+  .autocomplete-item {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .autocomplete-item.highlighted {
+    background-color: #f0f0f0;
+  }
+  
+  .cities-table {
+    margin-top: 60px;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .city-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 70px;
+  }
+  
+  .city-table th,
+  .city-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .city-table th {
+    position: sticky;
+    top: 52px;
+    background-color: #f4f4f4;
+    z-index: 999;
+  }
+  
+  .city-table tbody {
+    display: block;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  .city-table tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  .city-table tbody::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .city-table tbody::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+  }
+  
+  .city-table tbody::-webkit-scrollbar-track {
+    background-color: #f4f4f4;
+  }
+  
+  .loader {
+    text-align: center;
+    padding: 10px;
+    color: #888;
+    font-size: 18px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .search-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .table-container {
+    overflow: auto;
+    max-height: 400px;
+  }
+  
+  
+  .cities-table th, .cities-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cities-table th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .cities-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .cities-table td {
+    cursor: pointer;
+  }
+  
+  .cities-table td:first-child {
+    color: #4CAF50;
+    font-weight: bold;
+  }
+  
+  
+  
